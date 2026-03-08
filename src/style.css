@@ -422,13 +422,65 @@ ul { list-style: none; }
   pointer-events: none;
 }
 
+/* --- Category Headers --- */
+.category-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 60px clamp(40px, 6vw, 100px) 0;
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.category-label {
+  font-family: 'Orbitron', sans-serif;
+  font-size: clamp(11px, 1.2vw, 13px);
+  font-weight: 700;
+  letter-spacing: 0.25em;
+}
+
+.category-count {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--chrome-dark);
+  letter-spacing: 0.1em;
+}
+
+.category-header::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, var(--glass-border), transparent);
+}
+
+/* --- Project Meta --- */
+.project-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.project-category-badge {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  padding: 3px 10px;
+  border: 1px solid;
+  border-radius: 100px;
+}
+
 /* --- Project Sections --- */
 .section--project {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
   align-items: center;
-  padding: clamp(80px, 12vh, 140px) clamp(40px, 6vw, 100px);
+  padding: clamp(60px, 8vh, 100px) clamp(40px, 6vw, 100px);
+  min-height: auto;
 }
 
 .project-panel {
@@ -554,62 +606,7 @@ ul { list-style: none; }
 
 /* --- Layout Variations --- */
 .layout-flush-left { justify-self: start; }
-.section--silverbot .orb-right { justify-self: end; margin-right: -5%; }
-
 .layout-flush-right { justify-self: end; }
-.section--liqsnip { grid-template-columns: 45% 55%; }
-.section--liqsnip .project-content { order: 2; }
-.section--liqsnip .project-orb-container { order: 1; }
-
-.vertical-title {
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-  transform: rotate(180deg);
-  display: inline-block;
-  height: auto;
-  font-size: clamp(28px, 3.5vw, 48px) !important;
-}
-
-.layout-center-tilt .project-panel { transform: rotate(-2deg); }
-.section--cdaw .orb-above {
-  position: absolute;
-  top: 5%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 300px;
-  height: 300px;
-  z-index: 0;
-}
-.section--cdaw .project-content { z-index: 1; grid-column: 1 / -1; justify-self: center; max-width: 600px; }
-.section--cdaw { display: flex; flex-direction: column; }
-
-.section--launchpad .diagonal-chrome-line {
-  position: absolute;
-  top: -10%;
-  left: -10%;
-  width: 140%;
-  height: 1px;
-  background: linear-gradient(90deg, transparent 10%, var(--chrome-dark) 50%, transparent 90%);
-  transform: rotate(-20deg);
-  pointer-events: none;
-}
-
-.section--codox-terminal { display: flex; justify-content: center; }
-.section--codox-terminal .project-content { z-index: 2; }
-.section--codox-terminal .orb-behind {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  opacity: 0.5;
-}
-
-.section--codox-token {
-  display: flex;
-  align-items: center;
-  gap: 60px;
-}
-.layout-full-width { flex: 1; }
-.section--codox-token .orb-side { width: 350px; height: 350px; flex-shrink: 0; }
 
 /* --- Entrance Animations --- */
 .anim-enter {
@@ -622,9 +619,6 @@ ul { list-style: none; }
   opacity: 1;
   transform: translateY(0);
 }
-
-/* Layout-specific visible transforms */
-.layout-center-tilt.anim-enter.visible .project-panel { transform: rotate(-2deg); }
 
 /* Stagger tech badges */
 .anim-enter.visible .tech-badge {
@@ -861,36 +855,14 @@ ul { list-style: none; }
   .section--project {
     display: flex;
     flex-direction: column;
-    padding: 80px 20px;
+    padding: 60px 20px;
     gap: 24px;
-  }
-
-  .section--liqsnip .project-content,
-  .section--liqsnip .project-orb-container { order: unset; }
-
-  .vertical-title {
-    writing-mode: horizontal-tb;
-    transform: none;
-    position: static;
-    height: auto;
-  }
-
-  .section--cdaw { display: flex; }
-  .section--cdaw .orb-above {
-    position: relative;
-    top: auto; left: auto;
-    transform: none;
-    width: 100%;
-    height: 200px;
   }
 
   .project-orb-container {
     height: 250px;
     margin: 0 auto;
   }
-
-  .section--codox-token { flex-direction: column; gap: 24px; }
-  .section--codox-token .orb-side { width: 100%; height: 250px; }
 
   .timeline-container { padding-left: 30px; }
   .timeline-line { left: 0; }

@@ -4,9 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>C0R7X</title>
-  <meta name="description" content="Systems architect. Trading bots, audio engines, DeFi infrastructure." />
+  <meta name="description" content="Systems architect. Trading bots, audio engines, DeFi infrastructure, game engines." />
   <meta property="og:title" content="C0R7X" />
-  <meta property="og:description" content="Systems architect. Trading bots, audio engines, DeFi infrastructure." />
+  <meta property="og:description" content="Systems architect. Trading bots, audio engines, DeFi infrastructure, game engines." />
   <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -32,12 +32,7 @@
     <a href="#hero" class="nav-link" data-section="hero">C0R7X</a>
     <div class="nav-links">
       <a href="#manifesto" class="nav-link" data-section="manifesto">ABOUT</a>
-      <a href="#silverbot" class="nav-link" data-section="silverbot">01</a>
-      <a href="#liqsnip" class="nav-link" data-section="liqsnip">02</a>
-      <a href="#cdaw" class="nav-link" data-section="cdaw">03</a>
-      <a href="#launchpad" class="nav-link" data-section="launchpad">04</a>
-      <a href="#codox-terminal" class="nav-link" data-section="codox-terminal">05</a>
-      <a href="#codox-token" class="nav-link" data-section="codox-token">06</a>
+      <a href="#projects" class="nav-link" data-section="projects">PROJECTS</a>
       <a href="#timeline" class="nav-link" data-section="timeline">EVOLUTION</a>
       <a href="#contact" class="nav-link" data-section="contact">CONTACT</a>
     </div>
@@ -50,25 +45,19 @@
   <div id="mobile-nav-menu">
     <a href="#hero">HOME</a>
     <a href="#manifesto">ABOUT</a>
-    <a href="#silverbot">SILVERBOT</a>
-    <a href="#liqsnip">LIQSNIP</a>
-    <a href="#cdaw">CDAW</a>
-    <a href="#launchpad">LAUNCHPAD</a>
-    <a href="#codox-terminal">TERMINAL</a>
-    <a href="#codox-token">TOKEN</a>
+    <a href="#projects">PROJECTS</a>
     <a href="#timeline">EVOLUTION</a>
     <a href="#contact">CONTACT</a>
   </div>
 
   <main id="smooth-wrapper">
 
-    <!-- SECTION 1: HERO -->
+    <!-- HERO -->
     <section id="hero" class="section section--hero">
       <div class="hero-grid-overlay"></div>
       <div class="hero-diagonal-line"></div>
       <h1 class="hero-title chrome-text">C0R7X</h1>
       <p class="hero-subtitle">systems architect</p>
-      <div class="hero-orbs" id="hero-orbs"></div>
       <div class="scroll-chevron">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M6 9l6 6 6-6"/>
@@ -76,266 +65,28 @@
       </div>
     </section>
 
-    <!-- SECTION 2: MANIFESTO -->
+    <!-- MANIFESTO -->
     <section id="manifesto" class="section section--manifesto">
       <div class="manifesto-panel glass-panel anim-enter">
         <div class="scanlines"></div>
-        <p class="manifesto-text">Building trading systems that execute at machine speed. Audio engines with sub-10ms latency. DeFi infrastructure that moves millions atomically.</p>
-        <p class="manifesto-text">Rust-native. Performance-obsessed. Always shipping.</p>
+        <p class="manifesto-text">Building autonomous trading systems that learn and adapt. Audio engines with sub-10ms latency. DeFi infrastructure that moves millions atomically. Game engines from scratch in C++.</p>
+        <p class="manifesto-text">170K+ lines of Rust. Rust-native. Performance-obsessed. Always shipping.</p>
       </div>
-      <div class="manifesto-sphere" id="manifesto-sphere"></div>
     </section>
 
-    <!-- SECTION 3: SILVERBOT -->
-    <section id="silverbot" class="section section--project section--silverbot" data-accent="#7B68EE">
-      <div class="project-content anim-enter layout-flush-left">
-        <div class="glass-panel project-panel">
-          <div class="project-header">
-            <span class="project-number">01</span>
-            <h2 class="project-title chrome-text" style="--accent: #7B68EE">SILVERBOT</h2>
-            <p class="project-tagline">75x leverage silver scalping with ML inference</p>
-          </div>
-          <ul class="project-features">
-            <li><span class="chrome-bullet"></span>ONNX ML signal prediction</li>
-            <li><span class="chrome-bullet"></span>Aster DEX integration</li>
-            <li><span class="chrome-bullet"></span>TUI control panel</li>
-            <li><span class="chrome-bullet"></span>Real-time PnL tracking</li>
-            <li><span class="chrome-bullet"></span>Kill switches + drawdown limits</li>
-          </ul>
-          <div class="project-tech">
-            <span class="tech-badge">Rust</span>
-            <span class="tech-badge">tokio</span>
-            <span class="tech-badge">ratatui</span>
-            <span class="tech-badge">ONNX Runtime</span>
-            <span class="tech-badge">secp256k1</span>
-          </div>
-          <div class="project-status">
-            <span class="status-dot status--live"></span>
-            <span class="status-label">LIVE</span>
-          </div>
-        </div>
-      </div>
-      <div class="project-orb-container orb-right" id="orb-silverbot"></div>
-    </section>
+    <!-- PROJECTS (generated by JS) -->
+    <div id="projects"></div>
 
-    <!-- SECTION 4: LIQSNIP -->
-    <section id="liqsnip" class="section section--project section--liqsnip" data-accent="#00E5FF">
-      <div class="project-content anim-enter layout-flush-right">
-        <div class="glass-panel project-panel">
-          <div class="project-header">
-            <span class="project-number">02</span>
-            <h2 class="project-title chrome-text" style="--accent: #00E5FF">LIQSNIP</h2>
-            <p class="project-tagline">Solana liquidation sniper with atomic flash loans</p>
-          </div>
-          <ul class="project-features">
-            <li><span class="chrome-bullet"></span>Flash loan liquidations</li>
-            <li><span class="chrome-bullet"></span>Jito MEV bundle protection</li>
-            <li><span class="chrome-bullet"></span>WebSocket account monitoring</li>
-            <li><span class="chrome-bullet"></span>Redis-backed safety locks</li>
-            <li><span class="chrome-bullet"></span>Telegram alerts</li>
-          </ul>
-          <div class="project-tech">
-            <span class="tech-badge">Rust</span>
-            <span class="tech-badge">Solana</span>
-            <span class="tech-badge">Redis</span>
-            <span class="tech-badge">WebSocket</span>
-            <span class="tech-badge">Jito</span>
-          </div>
-          <div class="project-status">
-            <span class="status-dot status--live"></span>
-            <span class="status-label">LIVE</span>
-          </div>
-        </div>
-      </div>
-      <div class="project-orb-container orb-left" id="orb-liqsnip"></div>
-    </section>
-
-    <!-- SECTION 5: CDAW -->
-    <section id="cdaw" class="section section--project section--cdaw" data-accent="#FF6B00">
-      <div class="project-content anim-enter layout-center-tilt">
-        <div class="glass-panel project-panel">
-          <div class="project-header">
-            <span class="project-number">03</span>
-            <h2 class="project-title chrome-text" style="--accent: #FF6B00">CDAW</h2>
-            <p class="project-tagline">Professional DAW with modular Eurorack routing</p>
-          </div>
-          <ul class="project-features">
-            <li><span class="chrome-bullet"></span>Sub-10ms audio latency</li>
-            <li><span class="chrome-bullet"></span>VST3/AU/CLAP hosting</li>
-            <li><span class="chrome-bullet"></span>Modular CV routing</li>
-            <li><span class="chrome-bullet"></span>Professional DSP effects</li>
-            <li><span class="chrome-bullet"></span>Metal shader rendering</li>
-          </ul>
-          <div class="project-tech">
-            <span class="tech-badge">Swift</span>
-            <span class="tech-badge">Xcode</span>
-            <span class="tech-badge">Audio Engine</span>
-            <span class="tech-badge">Metal</span>
-            <span class="tech-badge">CoreAudio</span>
-          </div>
-          <div class="project-status">
-            <span class="status-dot status--dev"></span>
-            <span class="status-label">ACTIVE DEV</span>
-          </div>
-        </div>
-      </div>
-      <div class="project-orb-container orb-above" id="orb-cdaw"></div>
-    </section>
-
-    <!-- SECTION 6: BNB LAUNCHPAD -->
-    <section id="launchpad" class="section section--project section--launchpad" data-accent="#F0B90B">
-      <div class="project-content anim-enter layout-diagonal">
-        <div class="glass-panel project-panel">
-          <div class="project-header">
-            <span class="project-number">04</span>
-            <h2 class="project-title chrome-text" style="--accent: #F0B90B">BNB LAUNCHPAD</h2>
-            <p class="project-tagline">pump.fun competitor for Binance Smart Chain</p>
-          </div>
-          <ul class="project-features">
-            <li><span class="chrome-bullet"></span>Token factory with bonding curves</li>
-            <li><span class="chrome-bullet"></span>PancakeSwap auto-migration</li>
-            <li><span class="chrome-bullet"></span>Real-time price charts</li>
-            <li><span class="chrome-bullet"></span>Security-audited contracts</li>
-            <li><span class="chrome-bullet"></span>Full trading interface</li>
-          </ul>
-          <div class="project-tech">
-            <span class="tech-badge">Solidity</span>
-            <span class="tech-badge">Next.js 14</span>
-            <span class="tech-badge">Foundry</span>
-            <span class="tech-badge">TypeScript</span>
-            <span class="tech-badge">React</span>
-          </div>
-          <div class="project-status">
-            <span class="status-dot status--live"></span>
-            <span class="status-label">LIVE</span>
-          </div>
-        </div>
-      </div>
-      <div class="project-orb-container orb-diagonal" id="orb-launchpad"></div>
-      <div class="diagonal-chrome-line"></div>
-    </section>
-
-    <!-- SECTION 7: CODOX TERMINAL -->
-    <section id="codox-terminal" class="section section--project section--codox-terminal" data-accent="#00FF88">
-      <div class="project-content anim-enter layout-center-float">
-        <div class="glass-panel project-panel">
-          <div class="project-header">
-            <span class="project-number">05</span>
-            <h2 class="project-title chrome-text" style="--accent: #00FF88">CODOX TERMINAL</h2>
-            <p class="project-tagline">Bloomberg-style crypto terminal with AI insights</p>
-          </div>
-          <ul class="project-features">
-            <li><span class="chrome-bullet"></span>Real-time multi-symbol charts</li>
-            <li><span class="chrome-bullet"></span>Market heatmap</li>
-            <li><span class="chrome-bullet"></span>AI prediction engine</li>
-            <li><span class="chrome-bullet"></span>Lunar phase analysis</li>
-            <li><span class="chrome-bullet"></span>Live news + sentiment</li>
-          </ul>
-          <div class="project-tech">
-            <span class="tech-badge">Next.js 14</span>
-            <span class="tech-badge">Three.js</span>
-            <span class="tech-badge">Framer Motion</span>
-            <span class="tech-badge">TypeScript</span>
-            <span class="tech-badge">React Query</span>
-          </div>
-          <div class="project-status">
-            <span class="status-dot status--live"></span>
-            <span class="status-label">LIVE</span>
-          </div>
-        </div>
-      </div>
-      <div class="project-orb-container orb-behind" id="orb-codox-terminal"></div>
-    </section>
-
-    <!-- SECTION 8: CODOX TOKEN -->
-    <section id="codox-token" class="section section--project section--codox-token" data-accent="#9945FF">
-      <div class="project-content anim-enter layout-full-width">
-        <div class="project-panel project-panel--no-glass">
-          <div class="project-header">
-            <span class="project-number">06</span>
-            <h2 class="project-title chrome-text" style="--accent: #9945FF">CODOX TOKEN</h2>
-            <p class="project-tagline">Solana token with reflection rewards and lottery</p>
-          </div>
-          <ul class="project-features">
-            <li><span class="chrome-bullet"></span>Reflection rewards (passive income)</li>
-            <li><span class="chrome-bullet"></span>25% APY staking</li>
-            <li><span class="chrome-bullet"></span>Daily lottery system</li>
-            <li><span class="chrome-bullet"></span>Anti-whale protection</li>
-            <li><span class="chrome-bullet"></span>Deflationary burn mechanics</li>
-          </ul>
-          <div class="project-tech">
-            <span class="tech-badge">Rust</span>
-            <span class="tech-badge">Solana Program</span>
-            <span class="tech-badge">JavaScript</span>
-            <span class="tech-badge">Node.js</span>
-          </div>
-          <div class="project-status">
-            <span class="status-dot status--live"></span>
-            <span class="status-label">LIVE</span>
-          </div>
-        </div>
-      </div>
-      <div class="project-orb-container orb-side" id="orb-codox-token"></div>
-    </section>
-
-    <!-- SECTION 9: TIMELINE -->
+    <!-- TIMELINE -->
     <section id="timeline" class="section section--timeline">
       <h2 class="timeline-heading chrome-text anim-enter">EVOLUTION</h2>
-      <div class="timeline-container">
+      <div class="timeline-container" id="timeline-container">
         <div class="timeline-line" id="timeline-line"></div>
         <div class="timeline-glow" id="timeline-glow"></div>
-
-        <div class="timeline-node timeline-node--left anim-enter" data-index="0">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card glass-panel">
-            <h3 class="timeline-project" style="color: #9945FF">CODOX TOKEN</h3>
-            <p class="timeline-note">Started with Solana token mechanics</p>
-          </div>
-        </div>
-
-        <div class="timeline-node timeline-node--right anim-enter" data-index="1">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card glass-panel">
-            <h3 class="timeline-project" style="color: #00E5FF">LIQSNIP</h3>
-            <p class="timeline-note">Evolved into MEV and liquidation systems</p>
-          </div>
-        </div>
-
-        <div class="timeline-node timeline-node--left anim-enter" data-index="2">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card glass-panel">
-            <h3 class="timeline-project" style="color: #7B68EE">SILVERBOT</h3>
-            <p class="timeline-note">Refined into precision trading with ML</p>
-          </div>
-        </div>
-
-        <div class="timeline-node timeline-node--right anim-enter" data-index="3">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card glass-panel">
-            <h3 class="timeline-project" style="color: #FF6B00">CDAW</h3>
-            <p class="timeline-note">Applied real-time systems to audio</p>
-          </div>
-        </div>
-
-        <div class="timeline-node timeline-node--left anim-enter" data-index="4">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card glass-panel">
-            <h3 class="timeline-project" style="color: #F0B90B">BNB LAUNCHPAD</h3>
-            <p class="timeline-note">Full-stack DeFi product</p>
-          </div>
-        </div>
-
-        <div class="timeline-node timeline-node--right anim-enter" data-index="5">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card glass-panel">
-            <h3 class="timeline-project" style="color: #00FF88">CODOX TERMINAL</h3>
-            <p class="timeline-note">Unified everything into a single interface</p>
-          </div>
-        </div>
       </div>
     </section>
 
-    <!-- SECTION 10: CONTACT -->
+    <!-- CONTACT -->
     <section id="contact" class="section section--contact">
       <div class="contact-content anim-enter">
         <div class="contact-links">
@@ -343,11 +94,11 @@
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
             GitHub
           </a>
-          <a href="https://x.com/yungcortex" target="_blank" rel="noopener" class="contact-pill">
+          <a href="https://x.com/c0r7x" target="_blank" rel="noopener" class="contact-pill">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
             X
           </a>
-          <a href="https://t.me/yungcortex" target="_blank" rel="noopener" class="contact-pill">
+          <a href="https://t.me/c0r7x" target="_blank" rel="noopener" class="contact-pill">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
             Telegram
           </a>
